@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Ledger Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dashboard-section {
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .chart {
+            height: 300px;
+            background-color: #e9ecef;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>General Ledger Dashboard</h1>
+
+    <div class="dashboard-section">
+        <h2>Charts of Accounts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account Code</th>
+                    <th>Account Description</th>
+                    <th>Account Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cash</td>
+                    <td>1001</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>Accounts Receivable</td>
+                    <td>1002</td>
+                    <td>$3,000</td>
+                </tr>
+                <tr>
+                    <td>Inventory</td>
+                    <td>1003</td>
+                    <td>$10,000</td>
+                </tr>
+                <tr>
+                    <td>Accounts Payable</td>
+                    <td>2001</td>
+                    <td>-$2,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Transaction History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Assets</th>
+                    <th>Liabilities</th>
+                    <th>Equity</th>
+                    <th>Revenue</th>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-10-01</td>
+                    <td>Invoice #123</td>
+                    <td>$1,200</td>
+                    <td>Accounts Receivable</td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>2024-10-01</td>
+                        <td>Invoice #123</td>
+                        <td>$1,200</td>
+                        <td>Accounts Receivable</td>
+                    </tr>
+                <tr>
+                    <td>2024-10-05</td>
+                    <td>Payment to Supplier</td>
+                    <td>-$500</td>
+                    <td>Cash</td>
+                </tr>
+                <tr>
+                    <td>2024-10-10</td>
+                    <td>Inventory Purchase</td>
+                    <td>-$3,000</td>
+                    <td>Inventory</td>
+                </tr>
+                <tr>
+                    <td>2024-10-12</td>
+                    <td>Cash Sale</td>
+                    <td>$600</td>
+                    <td>Cash</td>
+                </tr>
+                <thead>
+
+
+                    <tr>
+                        <th>Code</th>
+                        <th>Accounts Description</th>
+                        <th>Account Type</th>
+                       
+                    </tr>
+                </thead>
+            </tbody>
+           
+        </table>
+    </div>
+
+    <div class="dashboard-section">
+        <h2>Financial Overview</h2>
+        <div class="chart" id="financialChart">
+            <!-- Placeholder for chart (can integrate libraries like Chart.js) -->
+            <p style="text-align:center; line-height:300px;">[Chart Here]</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
